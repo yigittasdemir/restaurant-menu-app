@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import 'media-queries';
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #F7E2D6;
+    header{
+        position: relative;
+        margin: 0 auto;
+        width: 70%;
+        background-color: #DFBB9D;
+        border-radius: 10px;
+        @include mobile{
+            width: 95%;
+        }
+        @include mobile_two{
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            padding: 10px 0px;
+            flex-wrap: wrap;
+            justify-content: center;
+            @include mobile{
+                display: none;
+            }
+            li{
+                margin: 10px 20px;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        .mobile-menu{
+            padding: 10px 0px;
+            display: none;
+            @include mobile{
+                display: block;
+            }
+            a{
+                text-align: right;
+                padding: 0px 20px;
+                i{
+                    color: #fff;
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+    #toggle-menu{
+        display: none;
+        border-top: 1px solid #fff;
+        z-index: 99;
+        border-radius: 0px 0px 10px 10px;
+        @include mobile{
+            display: none;
+        }
+        ul{
+            margin: 0px 0px;
+            @include mobile{
+               display: block;
+            }
+            li{
+                line-height: 40px;
+            }
+        }
+    }
+    .menu-container{
+        position: relative;
+        margin: 0 auto;
+        width: 70%;
+        border-radius: 10px;
+        h1{
+            text-align: center;
+        }
+        @include mobile{
+            width: 95%;
+        }
+        @include mobile_two{
+            width: 100%;
+        }
+        .menu{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            .card{
+                background-color: #DFBB9D;
+                border-radius: 5px;
+                text-align: center;
+                margin: 10px 20px;
+                width: 190px;
+                @include mobile{
+                    margin: 10px 10px;
+                    width: 150px;
+                    height: 250px;
+                }
+                @include mobile_two{
+                    width: 140px;
+                    margin: 10px 5px;
+                }
+                .info{
+                    padding: 15px 10px;
+                    img{
+                        width: 150px;
+                        height: 120px;
+                        border-radius: 5px;
+                        object-fit: cover;
+                        @include mobile{
+                            width: 120px;
+                            height: 100px;
+                        }
+                        @include mobile_two{
+                            width: 100px;
+                            height: 80px;
+                        }
+                    }
+                    h3{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        position: relative;
+        margin: 0 auto;
+        width: 70%;
+        background-color: #54BAB9;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        ul{
+            display: flex;
+            justify-content: center;
+            padding: 15px 0px;
+            li{
+                margin: 0px 15px;
+                a{
+                    font-size: 25px;
+                    color: #fff;
+                }
+            }
+        }
+        p{
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}

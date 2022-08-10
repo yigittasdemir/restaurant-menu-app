@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #F7E2D6;
+}
+
+body header {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  background-color: #DFBB9D;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 490px) {
+  body header {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  body header {
+    width: 100%;
+  }
+}
+
+body header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 490px) {
+  body header ul {
+    display: none;
+  }
+}
+
+body header ul li {
+  margin: 10px 20px;
+}
+
+body header ul li a {
+  color: #fff;
+}
+
+body header .mobile-menu {
+  padding: 10px 0px;
+  display: none;
+}
+
+@media screen and (max-width: 490px) {
+  body header .mobile-menu {
+    display: block;
+  }
+}
+
+body header .mobile-menu a {
+  text-align: right;
+  padding: 0px 20px;
+}
+
+body header .mobile-menu a i {
+  color: #fff;
+  font-size: 23px;
+}
+
+body #toggle-menu {
+  display: none;
+  border-top: 1px solid #fff;
+  z-index: 99;
+  border-radius: 0px 0px 10px 10px;
+}
+
+@media screen and (max-width: 490px) {
+  body #toggle-menu {
+    display: none;
+  }
+}
+
+body #toggle-menu ul {
+  margin: 0px 0px;
+}
+
+@media screen and (max-width: 490px) {
+  body #toggle-menu ul {
+    display: block;
+  }
+}
+
+body #toggle-menu ul li {
+  line-height: 40px;
+}
+
+body .menu-container {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 10px;
+}
+
+body .menu-container h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 490px) {
+  body .menu-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  body .menu-container {
+    width: 100%;
+  }
+}
+
+body .menu-container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+body .menu-container .menu .card {
+  background-color: #DFBB9D;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px 20px;
+  width: 190px;
+}
+
+@media screen and (max-width: 490px) {
+  body .menu-container .menu .card {
+    margin: 10px 10px;
+    width: 150px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  body .menu-container .menu .card {
+    width: 140px;
+    margin: 10px 5px;
+  }
+}
+
+body .menu-container .menu .card .info {
+  padding: 15px 10px;
+}
+
+body .menu-container .menu .card .info img {
+  width: 150px;
+  height: 120px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 490px) {
+  body .menu-container .menu .card .info img {
+    width: 120px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  body .menu-container .menu .card .info img {
+    width: 100px;
+    height: 80px;
+  }
+}
+
+body .menu-container .menu .card .info h3 {
+  color: #fff;
+}
+
+body footer {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  background-color: #54BAB9;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+body footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0px;
+}
+
+body footer ul li {
+  margin: 0px 15px;
+}
+
+body footer ul li a {
+  font-size: 25px;
+  color: #fff;
+}
+
+body footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=Main.css.map */
